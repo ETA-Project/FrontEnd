@@ -269,3 +269,13 @@ body {
   top: 80px;
   background: url(eleva.png);
 }
+
+h3 {
+  text-align: center;
+}
+
+.floor {
+  margin-top: 50px;
+  color: #000000;
+  text-align: center;
+}
