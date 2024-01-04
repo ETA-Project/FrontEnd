@@ -26,23 +26,31 @@ export default function home() {
       <div className="rect-77"></div>
       <div className="rect-78"></div>
       <Link to="/elevator1">
-        <div className="eleva1">
-          <div className="floor">홀수층</div>
+        <div id="container1">
+          <div className="eleva1">
+            <div className="floor">홀수층</div>
+          </div>
         </div>
       </Link>
       <Link to="/elevator2">
-        <div className="eleva2">
-          <div className="floor">짝수층</div>
+        <div id="container2">
+          <div className="eleva2">
+            <div className="floor">짝수층</div>
+          </div>
         </div>
       </Link>
       <Link to="/elevator3">
-        <div className="eleva3">
-          <div className="floor">짝수층</div>
+        <div id="container3">
+          <div className="eleva3">
+            <div className="floor">짝수층</div>
+          </div>
         </div>
       </Link>
       <Link to="/elevator4">
-        <div className="eleva4">
-          <div className="floor">홀수층</div>
+        <div id="container4">
+          <div className="eleva4">
+            <div className="floor">홀수층</div>
+          </div>
         </div>
       </Link>
     </div>
