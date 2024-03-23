@@ -7,13 +7,13 @@ import down from "../down.png";
 export default function Elevator(props) {
   const [data, setData] = useState("1");
   const [prevData, setPrevData] = useState("1");
-  const baseUrl =
-    "http://ec2-13-124-153-108.ap-northeast-2.compute.amazonaws.com:8080";
+  const baseUrl = process.env.REACT_APP_BASE_URL;
 
   async function callApi() {
     try {
       const response = await axios.get(baseUrl + `/eta/check/${props.floor}`);
       console.log(response.data);
+      setPrevData(data);
       setData(response.data);
     } catch (e) {
       console.log(e);
@@ -21,9 +21,8 @@ export default function Elevator(props) {
   }
 
   useEffect(() => {
-    setPrevData((prev) => prevData);
     callApi();
-  }, [data]);
+  }, []);
 
   return (
     <div
