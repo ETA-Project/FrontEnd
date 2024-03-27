@@ -1,8 +1,8 @@
 import imgLogo from "../elevator.png";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import up from "../up.png";
-import down from "../down.png";
+import { FaRegArrowAltCircleDown } from "react-icons/fa";
+import { FaRegArrowAltCircleUp } from "react-icons/fa";
 
 export default function Elevator(props) {
   const [data, setData] = useState("1");
@@ -44,8 +44,8 @@ export default function Elevator(props) {
         alt="Elevator Logo"
       />
       <div style={{ display: "flex", justifyContent: "center" }}>
-        {prevData > data && <img className="arrow" src={down} alt="down" />}
-        {prevData < data && <img className="arrow" src={up} alt="up" />}
+        {prevData > data && <FaRegArrowAltCircleDown size={40} />}
+        {prevData < data && <FaRegArrowAltCircleUp size={40} />}
         <h1 style={{ display: "inline-block" }}>{data}</h1>
       </div>
     </div>
