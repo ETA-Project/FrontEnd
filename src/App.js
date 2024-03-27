@@ -6,6 +6,7 @@ import Elevator2 from "./pages/elevator2";
 import Elevator3 from "./pages/elevator3";
 import Elevator4 from "./pages/elevator4";
 import Home from "./pages/home";
+import "./index.css";
 
 function App() {
   return (
